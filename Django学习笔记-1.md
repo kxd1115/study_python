@@ -8,6 +8,16 @@
 
 1. 采用MTV框架模式（模型Model，视图View，模板Template）
 
+![image-20230709152310336](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230709152310336.png)
+
+
+
+* 启动服务器
+
+```shell
+py manage.py runserver
+```
+
 
 
 * 关于项目文件的解释
@@ -56,14 +66,6 @@ py_mysite # 项目名称
 
 
 > `templates`文件夹：views.py中的函数渲染`templates`中的HTML模板，得到动态网页的内容，可以用缓存来提高速度。
-
-
-
-* 启动服务器
-
-```shell
-py manage.py runserver
-```
 
 
 
