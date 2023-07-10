@@ -8,8 +8,6 @@
 
 1. 采用MTV框架模式（模型Model，视图View，模板Template）
 
-![image-20230709152310336](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230709152310336.png)
-
 
 
 * 启动服务器
