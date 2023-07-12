@@ -2,27 +2,18 @@
 
 [TOC]
 
-## 1. 初识API
+## 1. 初试API
 
 ```
 py manage.py shell
 ```
 
-打开`Python`命令行，运行以下代码
 
-```python
-from polls.models import Choice, Queston
 
+* 创建管理员账号
 
 ```
+py manage.py createsuperuser
+```
 
-
-
-
-
-
-
-
-
-
-
+打开`http://127.0.0.1:8000/admin/`进入管理员界面
