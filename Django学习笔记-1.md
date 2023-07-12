@@ -10,10 +10,10 @@
 
 
 
-* 启动服务器
+* 创建项目(不一定要叫`mysite`)
 
-```shell
-py manage.py runserver
+```
+django-admin startproject mysite
 ```
 
 
@@ -67,7 +67,15 @@ py_mysite # 项目名称
 
 
 
-## 1. 创建投票应用
+* 启动服务器（用于开发的简易服务器）
+
+```shell
+py manage.py runserver
+```
+
+
+
+## 1. 创建投票应用（第一个项目）
 
 ```shell
 py manage.py startapp polls
@@ -117,7 +125,7 @@ py manage.py startapp polls
 
 注意：
 
-* 设置`TIME_ZONE`调整时区 -- `Aisa/Shanghai`
+* 设置`TIME_ZONE`调整时区 -- `Asia/Shanghai`
 * 可以通过`LANGUAGE_CODE`调整语言 --`zh-hans`
 
 
@@ -168,8 +176,6 @@ py manage.py makemigrations polls
 
 
 
-
-
 ```
 py manage.py sqlmigrate polls 0001
 ```
@@ -192,8 +198,6 @@ py manage.py migrate
 
 运行`migrate`命令，在数据库里创建新定义的模型的数据表（选中所有还没有执行过的迁移，将对应的模型更改同步到数据库结构上）
 
-
-
 **迁移**
 
 能够让你在开发过程中持续的改变数据库结构，并且不需要重新删除和创建表
@@ -203,8 +207,4 @@ py manage.py migrate
 * 编辑`models.py`文件，改变模型。
 * 运行`python manage.py makemigrations`为模型的改变生成迁移文件。
 * 运行`python manage.py migrate`来应用数据库迁移。
-
-
-
-
 
