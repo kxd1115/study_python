@@ -8,14 +8,12 @@
 
 1. 采用MTV框架模式（模型Model，视图View，模板Template）
 
-![image-20230709152310336](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230709152310336.png)
 
 
+* 创建项目(不一定要叫`mysite`)
 
-* 启动服务器
-
-```shell
-py manage.py runserver
+```
+django-admin startproject mysite
 ```
 
 
@@ -69,7 +67,15 @@ py_mysite # 项目名称
 
 
 
-## 1. 创建投票应用
+* 启动服务器（用于开发的简易服务器）
+
+```shell
+py manage.py runserver
+```
+
+
+
+## 1. 创建投票应用（第一个项目）
 
 ```shell
 py manage.py startapp polls
@@ -170,8 +176,6 @@ py manage.py makemigrations polls
 
 
 
-
-
 ```
 py manage.py sqlmigrate polls 0001
 ```
@@ -193,8 +197,6 @@ py manage.py migrate
 ```
 
 运行`migrate`命令，在数据库里创建新定义的模型的数据表（选中所有还没有执行过的迁移，将对应的模型更改同步到数据库结构上）
-
-
 
 **迁移**
 
